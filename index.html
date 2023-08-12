@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/fba60a279f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1 class="title">
+        <i class="fa-solid fa-cloud"></i>
+        Weather App
+      </h1>
+    </div>
+    <main>
+      <div class="card">
+        <div class="search">
+          <input
+            type="search"
+            class="search-bar"
+            placeholder="Enter City Name"
+          />
+          <button>
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+          </button>
+        </div>
+        <div class="weather loading">
+          <h1 class="city">Weather in Denver</h1>
+          <h2 class="temp">51°C</div>
+          <div class="flex">
+            <img
+              src="https://openweathermap.org/img/wn/03n.png"
+              alt=""
+              class="icon"
+            />
+            <div class="description">Cloudy</div>
+          </div>
+          <div class="humidity">Humidity: 60%</div>
+          <div class="wind">Wind speed : 6.2 km/h</div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js" defer></script>
+</html>

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Open+Sans&family=Poppins:wght@100&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-image: url("https://source.unsplash.com/random/?landscape");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+  background-attachment: fixed;
+  height: 100%;
+  overflow-y: hidden;
+}
+.logo {
+  font-size: 20px;
+  text-align: center;
+  background: #ffffffd0;
+  box-shadow: 3px 3px 5px black;
+  color: black;
+  width: 350px;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: 50px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 3.5em;
+  border-radius: 30px;
+  max-width: 400px;
+  width: 100%;
+  margin: 1em;
+  overflow-y: hidden;
+}
+div .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  padding: 12px 14px;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff2b;
+  color: white;
+}
+button:hover {
+  transition: all 0.4s ease-in-out;
+  background: white;
+}
+input.search-bar {
+  border: 1px solid black;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 15px;
+  background: #ffffff2b;
+  color: white;
+  font-size: 120%;
+  margin-right: 5px;
+}
+input.search-bar:focus {
+  border-color: white;
+}
+input.search-bar::placeholder {
+  text-align: center;
+}
+.weather {
+  margin-top: 20px;
+}
+.description {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 50px;
+  position: relative;
+}
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading.....";
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (width<=480px) {
+  .logo {
+    font-size: 20px;
+    text-align: center;
+    background: #ffffffd0;
+    box-shadow: 3px 3px 5px black;
+    color: black;
+    width: 350px;
+    margin: auto;
+    border-radius: 50px;
+    position: relative;
+    top: 50px;
+  }
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2.5em;
+    border-radius: 30px;
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 150px;
+    font-weight: bold;
+  }
+  button {
+    border: none;
+  }
+  button:focus {
+    outline: none;
+  }
+}
